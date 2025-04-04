@@ -8,6 +8,7 @@ export default function CivitaiImagesCreador({ limite = 200 }) {
   const [error, setError] = useState(null);
   const location = useLocation();
   const { username } = location.state || {};
+  
 
   useEffect(() => {
     let apiUrl = `https://civitai.com/api/v1/images?limit=${limite}&nsfw=x`;
